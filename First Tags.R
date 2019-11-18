@@ -9,7 +9,7 @@ library(krsp)
 library (lubridate)
 
 # Create Connection using krsp_connect using the AWS instance of the KRSP database
-connection_1<-krsp_connectkrsp_connect (host = "krsp.cepb5cjvqban.us-east-2.rds.amazonaws.com",
+connection_1<-krsp_connect (host = "krsp.cepb5cjvqban.us-east-2.rds.amazonaws.com",
                      dbname ="krsp",
                      username = Sys.getenv("krsp_user"),
                      password = Sys.getenv("krsp_password")
